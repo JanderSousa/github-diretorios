@@ -102,3 +102,35 @@ export const IssueList = styled.ul`
     }
   }
 `;
+
+export const Filter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 20px;
+
+  .div-filter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  select {
+    border: 1px solid #999;
+    border-radius: 4px;
+    height: 26px;
+    width: 75px;
+  }
+
+  button {
+    margin-left: 2px;
+    width: 80px;
+    height: 26px;
+    border: 1px solid #999;
+  }
+
+  .button-previous {
+    cursor: ${props => props.pageOne && 'not-allowed'};
+    opacity: ${props => props.pageOne && 0.6};
+  }
+`;
